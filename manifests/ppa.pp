@@ -56,7 +56,7 @@ define apt::ppa(
         notify      => Exec['apt_update'],
         require     => [
         File['sources.list.d'],
-        Package[$package],
+        # Package[$package],
         ],
     }
 
